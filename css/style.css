@@ -1,0 +1,193 @@
+html{
+    height:100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    min-height:100%;
+}
+.topbar{
+    display: flex;
+    height: 50px;
+    background-color: black;
+}
+nav{
+    width: 100%;
+    display: flex;
+}
+.toplinks{
+    align-self: flex-end;
+    width: 200px;
+    font-size: 20px;
+    text-decoration: none;
+    color:white;
+}
+.toplinks:hover{
+    color:yellowgreen;
+}
+.boton{
+    background-color: rgb(65, 115, 132);
+    color:white;
+    text-decoration: none;
+    margin: 9px 0px 9px 0px;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 15px;
+    transition: 00.5s;
+}
+.boton:hover{
+    background-color: rgb(141, 186, 201);
+}
+.desplegable{
+    margin-top:10px;
+}
+.desplegable>select{
+    border:1px solid rgb(141, 186, 201);
+    border-radius: 15px;
+}
+.films{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.film-container{
+    max-width: 180px;
+    display: flex;
+    flex: 1 0 180px;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 25px 0px 25px 0px;
+    background-color: rgb(212, 243, 253);
+    transition: 0.5s;
+}
+.film-container:hover{
+    border-radius: 50px;
+    background-color: rgb(188, 218, 228);
+    transition: 0.5s;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 5px;
+}
+.cover{
+    width: 90px;
+}
+.iconos{
+    display: flex;
+    width: 80px;
+    justify-content: space-around;
+}
+.icono{
+    width: 20px;
+}
+h3,h4,h5{
+    margin: 1px 5px 1px 5px;
+}
+.puntuacio{
+    width: 15px;
+}
+.formulario{
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+}
+.formulario>label{
+    display:block;
+    width: 100%;
+}
+.formulario>label>input{
+    width: 100%;
+    display: block;
+}
+.formulario>label>select{
+    width: 100%;
+    display: block;
+}
+.busqueda{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    width:100%;
+    bottom: 0px;
+    left:0px;
+    margin-top:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+#sectionchart{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    height: 100%;
+
+}
+#chartpelisdiv{
+    width: 100%;
+    max-height: 600px;
+    height: 100vh!important; 
+}
+#chartgenerosdiv{
+    width: 100%;
+    max-height: 600px;
+    height: 100vh!important; 
+}
+@media screen and (max-width: 960px){
+    .film-container{
+        max-width: none;
+        width:80%;
+        margin: 10px auto 10px auto;
+    }
+    .films{
+        flex-direction: column;
+    }
+    .cover{
+        width:200px;
+        margin:20px 0px 20px 0px;
+    }
+    .h4{
+        font-size:2em;
+    }
+    footer{
+        height:50px;
+    }
+
+}
+@media screen and (max-width: 500px){
+    .film-container{
+        max-width: none;
+        width:80%;
+        padding:20px 0px 20px 0px;
+        margin: 10px auto 10px auto;
+    }
+    .films{
+        flex-direction: column;
+    }
+    .cover{
+        width:200px;
+        margin:20px 0px 20px 0px;
+    }
+    .h4{
+        font-size:2em;
+    }
+    .toplinks{
+        font-size:0.7em;
+    }
+    footer{
+        height:40px;
+    }
+}
